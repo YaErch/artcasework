@@ -11,10 +11,10 @@
 | `agent_instruction.md` | Системная инструкция агента: роль, конвейер, правила, Quality Gate, формат итогового отчёта |
 | `skills/requirement_review.md` | Скилл анализа требований: противоречия, неоднозначности, полнота |
 | `skills/task_design.md` | Скилл проектирования задач Jira (User Story, Gherkin, трассировка) |
-| `skills/test_design.md` | Скилл проектирования тест-модели для TestRail (позитивные/негативные/граничные) |
+| `skills/test_design.md` | Скилл проектирования тест-модели для Test IT (позитивные/негативные/граничные, DDT-параметризация) |
 | `artifacts/01_requirement_review.md` | Результат этапа 1 — ревью ТЗ ArtCase (реальный прогон) |
 | `artifacts/02_task_design.md` | Результат этапа 2 — бэклог Jira для ArtCase (реальный прогон) |
-| `artifacts/03_test_design.md` | Результат этапа 3 — тест-модель TestRail для ArtCase (реальный прогон) |
+| `artifacts/03_test_design.md` | Результат этапа 3 — тест-модель Test IT для ArtCase (реальный прогон) |
 | `artifacts/final_report.md` | Итоговый отчёт агента: проблемы, метрики, вердикты Quality Gate |
 
 ## Конвейер агента
@@ -39,8 +39,8 @@ Confluence (ТЗ ArtCase)
           ▼
 ┌─────────────────────┐   FAIL → доработка бэклога
 │ 3. test_design       │──────────────────────────────────────► назад на этап 2
-│    ( TestRail: +/-/  │
-│      граничные )     │
+│    ( Test IT: +/-/   │
+│      граничные, DDT )│
 └─────────┬───────────┘
           │ PASS (Quality Gate 3)
           ▼
